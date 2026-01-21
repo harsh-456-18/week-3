@@ -20,7 +20,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public String signUp(@RequestBody SignupRequest sd) {
+    public String signup(@RequestBody SignupRequest sd) {
         System.out.println("\n\t signup DATA : " + sd.toString());
         return "signup success -> {\n\t name: " + sd.getName() +
                "\n\t email: " + sd.getEmail() + "\n}";
