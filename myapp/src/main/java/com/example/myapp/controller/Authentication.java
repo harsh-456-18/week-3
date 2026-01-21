@@ -1,5 +1,7 @@
 package com.example.myapp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,4 +38,11 @@ public class Authentication {
 
         return "signup sucess";
     }
+
+
+    @GetMapping("/users")
+    List<User> getAllUsers(){
+        return db.findAll();
+    }
+    
 }
