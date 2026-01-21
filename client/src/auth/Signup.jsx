@@ -24,11 +24,18 @@ async  function submitHandler() {
     )
     let dataText=await res.text();
     console.log("\n\t res = "+dataText)
+    if(res.ok){
+      alert("Signup successfull ✅");
+      setN("");
+      setE("");
+      setP("");
+    }else{
+      alert("Signup failed..");
+    }
 
     }catch{
       console.log("\n\t error")
     }
-
 
   }
 
