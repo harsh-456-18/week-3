@@ -4,7 +4,11 @@ import {BrowserRouter,Route,Routes} from "react-router-dom"
 import Home from './page/Home'
 import Truck from './page/Truck'
 import Signup from './auth/Signup'
+import Login from './auth/Login'
+import Admin from './auth/Admin'
+import Use from './auth/Use'
 function App() {
+  console.log(" fruit : 🍑");
   return (
     <>
     <BrowserRouter>
@@ -12,6 +16,9 @@ function App() {
       <Route   path="/"   element={<Home/>}  />
       <Route   path="/truck"   element={<Truck/>}  />
       <Route   path="/signup"   element={<Signup/>}  />
+      <Route   path="/login"   element={<Login/>}  />
+      <Route   path="/admin"   element={<Admin/>}  />
+      <Route   path="/u"   element={<Use/>}  />
     </Routes>
     
     

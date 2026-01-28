@@ -10,7 +10,7 @@ import com.example.myapp.dto.SignupRequest;
 import com.example.myapp.model.User;
 import com.example.myapp.repo.UserRepository;
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*")
 @RestController
 public class AuthController {
 
@@ -27,6 +27,7 @@ public class AuthController {
         return "signup success -> {\n\t name: " + sd.getName() +
                "\n\t email: " + sd.getEmail() + "\n}";
     }
+
     @PostMapping("/login")
     public String login(@RequestBody LoginRequest data) {
 
