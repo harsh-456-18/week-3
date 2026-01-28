@@ -28,4 +28,8 @@ async function signup(){
     })
     let data=await res.text();
     console.log(" api response : "+data);
+
+    if(data=="signup success"){
+        alert("signup success..✅")
+    }
 }

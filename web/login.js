@@ -34,6 +34,7 @@ async function login(){
     console.log(" api response : "+data);
 
     if(data=="Login successful"){
-        alert("Login success..✅")
+        alert("Login success..✅");
+        window.location.href="/admin";
     }
 }
